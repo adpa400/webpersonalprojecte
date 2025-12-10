@@ -1,0 +1,665 @@
+
+
+/* PAGINA PRINCIPAL */
+
+body {
+    background: linear-gradient(#000000 50%, #D9A441);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 120px;
+}
+header {
+   background-color: rgba(18, 18, 18, 0.9);
+    padding: 10px 40px;         
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    height: 100px;    
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.menu ul {
+     display: flex;
+    gap: 30px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu ul li a {
+    color: #F5F2E9;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.menu ul li a:hover {
+    background-color: #F4C75B;
+    transform: translateY(2px);
+    color: #000000;
+    box-shadow: 0 8px 15px #8C6A21; 
+}
+.custom-link {
+    color: #F5F2E9 !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-link:hover {
+    background-color: #F4C75B;
+    transform: translateY(2px);
+    color: #000000 !important;
+    box-shadow: 0 8px 15px #8C6A21;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    filter: none !important;  
+}
+
+.logo3d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    
+}
+
+.logo3d img {
+    width: 65%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo3d p {
+    background: linear-gradient(135deg, #F4C75B, #FFC857); 
+    margin-top: 30px;
+    font-size: 1.8rem;
+    border-radius: 12px;
+    padding: 12px 24px; 
+    display: inline-block;
+    transition: all 0.3s ease; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    
+}
+.logo3d p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.logo3d p:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); 
+    color: #000;
+}
+
+.icon-barras {
+    display: none;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border-top: 2px solid #F4C75B;
+    margin-top: auto;
+}
+
+.footer-fons {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer-fons p {
+    color: #F5F2E9;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    flex-wrap: nowrap;
+}
+
+.telefon {
+    color: #F4C75B !important;
+    font-weight: 500 !important;
+}
+
+.email {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.email a {
+    text-decoration: none;
+    color: #F5F2E9;
+}
+
+.email a:hover {
+    color: #F4C75B;
+    cursor: pointer;
+}
+.footer-fons img {
+    margin-left: auto; 
+    width: 100px;      /* Ajusta el tamaño */
+    height: auto;      
+}
+
+
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: 0 auto;
+    border-radius: 15px;             
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5); 
+    overflow: hidden;  
+    margin-top: 10%;                
+}
+section img {
+     width: 0px;
+     flex-grow: 1;
+     object-fit: cover;
+     opacity: .8;
+     transition: .5s ease;
+    
+}
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.videogym {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;       
+    padding: 20px;
+}
+
+.videogym video {
+    width: 600px;
+    border-radius: 10px;
+    border: 4px solid #d4af37;    
+   
+}
+
+.videogym .texto {
+    max-width: 400px;
+    color: #F5F2E9;  
+    font-size: 20px;
+}
+
+.entrenadores {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.entrenadores h2 {
+    color: #ffd700;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.entrenadores-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+    flex-wrap: wrap;
+}
+
+.entrenador {
+    background-color: rgba(28,28,28,0.9);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px; 
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.entrenador:hover {
+    transform: translateY(-10px); 
+    border: 4px solid #F4C75B;
+}
+
+.entrenador img {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.entrenador h3 {
+    margin-bottom: 15px;
+    color: #ffd700;
+    font-size: 1.5rem;
+}
+
+.entrenador p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.horario {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 150px;
+    margin-left: 35%;
+    margin-bottom: 18px;
+    
+}
+.horario caption {
+    color: #F5F2E9;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+.horario th, .horario td {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #F5F2E9;
+    font-size: 18px;
+    color: #F5F2E9;
+}
+
+.horario th {
+    background-color: transparent;
+}
+
+.horario td {
+    background-color: transparent;
+}
+
+.horario tbody tr th {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.horario tr:hover {
+    background-color: #D9A441;
+}
+
+.horario tr:hover td,
+.horario tr:hover th {
+    color: #000000;
+}
+
+.tienda {
+    padding: 40px 20px;
+    background-color: #121212;
+    min-height: 70vh;
+}
+
+.titulo-tienda {
+    text-align: center;
+    color: #D4AF37;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 100px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filtro-btn {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filtro-btn.active {
+    background-color: #D4AF37;
+    color: #121212;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid #333;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    border-color: #D4AF37;
+}
+
+.producto-img {
+    position: relative;
+    height: 180px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.producto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+}
+
+.producto-img .img-hover {
+    opacity: 0;
+}
+
+.producto:hover .img-principal {
+    opacity: 0;
+}
+
+.producto:hover .img-hover {
+    opacity: 1;
+}
+
+.producto h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+.precio {
+    color: #D4AF37;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.btn-comprar {
+    width: 100%;
+    padding: 10px;
+    background-color: #D4AF37;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-comprar:hover {
+    background-color: #C19B2B;
+}
+
+.plazos {
+    color: #aaa;
+}
+
+
+.contacto {
+    padding: 40px 20px;
+    min-height: 70vh;
+}
+
+.titulo {
+    text-align: center;
+    color: #D4AF37;
+    font-size: 28px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    background-color: rgba(26, 26, 26, 0.95);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #D4AF37;
+}
+
+.campo {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 4px;
+}
+
+.campo:focus {
+    border-color: #D4AF37;
+    outline: none;
+}
+
+.formulario .btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #D4AF37;
+    color: #F5F2E9;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #C19B2B;
+}
+
+.info {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color: #D4AF37;
+    padding: 20px;
+}
+
+.privacidad {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.privacidad a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* RESPONSIVE PAGINA PRINCIPAL- MOVIL */
+
+@media (max-width: 768px) {
+
+
+    body {
+        margin-top: 100px;
+        background: linear-gradient(#000000 40%, #D9A441);
+    }
+
+ 
+    header {
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu ul li a,
+    .custom-link {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+
+    .logo3d img {
+        width: 90%;
+    }
+
+    .logo3d p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+ 
+    section {
+        width: 90%;
+        height: 300px;
+        margin-top: 20%;
+    }
+
+    section img:hover {
+        width: 100%;
+    }
+
+   
+    .videogym {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .videogym video {
+        width: 100%;
+    }
+
+    .videogym .texto {
+        max-width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    .entrenadores-container {
+        gap: 30px;
+    }
+
+    .entrenador {
+        width: 90%;
+    }
+
+ 
+    .horario {
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+        margin-top: 60px;
+    }
+
+    .horario th,
+    .horario td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-tienda {
+        font-size: 26px;
+    }
+
+    .filtros {
+        flex-wrap: wrap;
+    }
+
+ 
+    .formulario,
+    .info {
+        width: 90%;
+    }
+
+  
+    .footer-fons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .footer-fons img {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 80px;
+    }
+}
